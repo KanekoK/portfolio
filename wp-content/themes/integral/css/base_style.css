@@ -1,0 +1,64 @@
+/*
+Key color
+
+main:#0071e3
+
+gradient_1
+start: #00fcd5
+finish: #00c6ff
+
+gradient_2
+start: #00c6ff
+finish: #a343da
+*/
+html,body{
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #fefefe;
+}
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+header .header-block {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+header .header-block .left {
+  width: 20%;
+  margin: auto;
+}
+header .header-block .left img {
+  width: 50%;
+  text-align: center;
+}
+header .header-block .right {
+  width: 80%;
+}
+header .right .menu-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .right .menu-block li {
+  width: 100%;
+}
+header .right .menu-block a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+}

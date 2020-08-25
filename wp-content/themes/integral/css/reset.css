@@ -1,0 +1,220 @@
+@media print, screen and (min-width: 741px) {
+  /*
+ * reset.css
+ *  + Reset
+*/
+  /* ----------------------------------------------------------
+ Reset
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+---------------------------------------------------------- */
+  /*
+  TODO will need to remove settings on HTML since we can't namespace it.
+  TODO with the prefix, should I group by selector or property for weight savings?
+*/
+  html {
+    background: #FFF;
+    color: #333;
+  }
+  /*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+  /*
+  TODO test putting a class on HEAD.
+    - Fails on FF.
+*/
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  code,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  fieldset,
+  img {
+    border: 0;
+  }
+  /*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  th,
+  var {
+    font-style: normal;
+    font-weight: inherit;
+  }
+  ul {
+    list-style: none;
+  }
+  caption,
+  th {
+    text-align: left;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: inherit;
+  }
+  q:before,
+  q:after {
+    content: '';
+  }
+  abbr,
+  acronym {
+    border: 0;
+    font-feature-settings: normal;
+    font-variant: normal;
+  }
+  /* to preserve line-height and selector appearance */
+  sup {
+    vertical-align: text-top;
+  }
+  sub {
+    vertical-align: text-bottom;
+  }
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  /*to enable resizing for IE*/
+  input,
+  textarea,
+  select {
+    *font-size: 100%;
+  }
+  /*because legend doesn't inherit in IE */
+  legend {
+    color: #000;
+  }
+  /* YUI CSS Detection Stamp */
+  #yui3-css-stamp.cssreset {
+    display: none;
+  }
+  .phleft {
+    padding: 0 20px 20px 0;
+    float: left;
+  }
+  .phright {
+    padding: 0 0 20px 20px;
+    float: right;
+  }
+  .clr {
+    width: 0;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+  }
+  .clearfix {
+    display: inline-table;
+  }
+  /* Hides from IE-mac \*/
+  * html .clearfix {
+    height: 1%;
+  }
+  .clearfix {
+    display: block;
+  }
+  /* End hide from IE-mac */
+}
+
+@media screen and (max-width: 740px) {
+  /************************************************
+  reset
+*************************************************/
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, font, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+  article, aside, canvas, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+  }
+  nav, ul {
+    list-style: none;
+  }
+  img {
+    border: 0;
+    vertical-align: top;
+  }
+  td img {
+    vertical-align: baseline;
+  }
+  fieldset {
+    border: 0;
+  }
+  .clr {
+    width: 0;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+  }
+  section {
+    clear: both;
+  }
+  .clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+  }
+  .clearfix {
+    display: inline-table;
+  }
+  /* Hides from IE-mac \*/
+  * html .clearfix {
+    height: 1%;
+  }
+  .clearfix {
+    display: block;
+  }
+  /* End hide from IE-mac */
+}
+/*# sourceMappingURL=reset.css.map */
