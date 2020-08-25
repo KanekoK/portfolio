@@ -35,16 +35,20 @@ section::before{
   font-size: 68px;
 }
 
+.profile-block .head {
+  padding: 40px 0;
+}
 
+.head h2 {
+  font-size: 36px;
+  position: relative;
+}
 
 .profile-block .career-graph-block {
   width: 80%;
   margin: 0 auto;
 }
-.profile-block .career-graph-block h2 {
-  font-size: 36px;
-  position: relative;
-}
+
 .profile-block .career-graph-block .graph {
   position: relative;
   text-align: center;
@@ -53,20 +57,86 @@ section::before{
   width: 90%;
 }
 .profile-block .career-graph-block .career-contents {
+  margin-top: 20px;
   display: flex;
+  justify-content: space-around;
   position: relative;
 }
 
-
-.post-block {
-
+.career-graph-block .career-contents .balloon-top {
+  width: 22%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  border: solid 3px #999999;
+  box-sizing: border-box;
 }
-.post-block .blog-block, .portfolio-block {
+
+.career-graph-block .career-contents .balloon-top:nth-child(2) {
+  bottom: 80px;
+}
+.career-graph-block .career-contents .balloon-top:nth-child(3) {
+  bottom: 160px;
+}
+.career-graph-block .career-contents .balloon-top:nth-child(4) {
+  bottom: 240px;
+}
+
+.career-graph-block .career-contents .balloon-top:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.career-graph-block .career-contents .balloon-top:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #999999;
+  z-index: 1;
+}
+
+.career-graph-block .career-contents .theme {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.post-block .head {
   width: 80%;
   margin: 0 auto;
+  padding: 40px 0;
 }
-.post-block h2 {
-  font-size: 36px;
+.post-block h3 {
+  font-size: 30px;
   border-bottom: 3px solid #eee;
 }
 
+.post-block .blog-block, .portfolio-block {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.contact-block .head {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}

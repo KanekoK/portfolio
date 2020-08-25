@@ -28,14 +28,17 @@ a {
 
 header {
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 99999;
   text-align: center;
   background-color: #1f1f1f;
 }
 header .header-block {
   display: flex;
-  width: 80%;
+  justify-content: space-between;
+  max-width: 980px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 header .header-block .left {
